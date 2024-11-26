@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff0080;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Menu mobile */
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile .hamburguer {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-mobile-items {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ff0080;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-mobile-items li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+}
+
+.menu-mobile-items.active {
+    display: flex;
+}
+
+/* Seção Principal */
+main {
+    padding: 20px;
+}
+
+#descricao {
+    margin-bottom: 40px;
+}
+
+#descricao h2 {
+    font-size: 2rem;
+    color: #ff0080;
+}
+
+#descricao ul li {
+    margin: 5px 0;
+}
+
+/* Galeria */
+#galeria h2 {
+    font-size: 2rem;
+    color: #ff0080;
+    margin-bottom: 20px;
+}
+
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+#participação h3 {
+    font-size: 2rem;
+    color: #ff0080;
+    margin-bottom: 20px;
+}
+
+.participa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.participa-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 225, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.participa-grid img:hover {
+    transform: scale(1.05);
+}    
+
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .redes-sociais a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .redes-sociais a:hover {
+    color: #ffcc00;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    footer .redes-sociais {
+        margin-top: 20px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}

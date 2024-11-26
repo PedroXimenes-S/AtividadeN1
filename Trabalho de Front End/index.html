@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feira Tecnológica 2024</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Feira Tecnológica 2024</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#participação">Participação</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+            </ul>
+        </nav>
+        <div class="menu-mobile">
+            <span class="hamburguer" onclick="toggleMenu()">☰</span>
+            <ul class="menu-mobile-items">
+                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#participa">Participação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="descricao">
+            <h2>Sobre a Feira Tecnológica</h2>
+            <p>Prepare-se para uma jornada inesquecível de descobertas, inovação e aprendizado! A Feira Científica Arena
+                de Ciência e Tecnologia William Malvezzi ocorrerá de 20 a 30 de janeiro de 2025, no icônico Centro de
+                Inovação William Malvezzi, um local moderno e inspirador, preparado para receber cientistas, estudantes,
+                professores e entusiastas da ciência de todas as idades.
+
+                Durante dez dias, a Arena de Ciência e Tecnologia será o palco para uma série de experiências imersivas,
+                palestras, workshops e exposições interativas, com o objetivo de aproximar o público das mais recentes
+                inovações e descobertas científicas, de uma maneira dinâmica e acessível.
+
+                A feira científica contará com mais de 100 estandes que irão exibir projetos inovadores de áreas como
+                biotecnologia, robótica, inteligência artificial, sustentabilidade, astronomia, física, engenharia e
+                muito mais. Alunos e pesquisadores de universidades e escolas técnicas apresentarão suas pesquisas e
+                invenções, promovendo um ambiente de troca de ideias e colaboração.</p>
+            <ul>
+                <li><strong>Data:</strong> 20 a 30 de janeiro de 2024</li>
+                <li><strong>Local:</strong> Arena William Malvezzi, Brasília</li>
+                <li><strong>Horário:</strong> 9h - 18h</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Imagens</h2>
+            <div class="galeria-grid">
+                <img src="Imagens/Imagem 1.jpg" alt="Imagem da feira 1">
+                <img src="Imagens/Imagem 2.jfif" alt="Imagem da feira 2">
+                <img src="Imagens/Imagem3.webp" alt="Imagem da feira 3">
+                <img src="Imagens/Imagem 4.jfif" alt="Imagem da feira 4">
+                <img src="imagens/imagem 5.jfif" alt="Imagem da feira 5">
+                <img src="Imagens/imagem 6.jfif" alt="Imagem da feira 6">
+            </div>
+        </section>
+   
+
+    <section id="participação">
+    <h3>Participação</h3>
+    <div class="participa-grid">
+        <img src="Participa/Elon Musk.jfif" alt="Par 1">
+        <img src="Participa/Jeff Bezos.jfif" alt="Par 2">
+        <img src="Participa/Jimmy Walles.jfif" alt="Par 4">
+
+    </div>
+</section>
+</main>
+
+
+    <footer id="contato">
+        <div class="redes-sociais">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+        <div class="contato-info">
+            <p>Entre em contato: <strong>arenaMalvezzi@feiratecnologica.com.br</strong></p>
+        </div>
+        <p>&copy; 2024 Feira Tecnológica. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuItems = document.querySelector('.menu-mobile-items');
+            menuItems.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
